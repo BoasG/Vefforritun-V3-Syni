@@ -1,0 +1,12 @@
+<%- include('header') -%>
+
+<h1>Undir&shy;skriftar&shy;listi — umsjón</h1>
+
+<div class="user">
+  <p class="user__loggedin">Innskráður sem: <strong><%= user.username %></strong></p>
+  <p class="user__logout"><a href="/admin/logout">Útskrá</a></p>
+</div>
+
+<%- include('list') -%>
+
+<%- include('footer') -%>
