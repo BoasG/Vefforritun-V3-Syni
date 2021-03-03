@@ -57,7 +57,7 @@ async function deleteRoute(req, res) {
 
   const deleted = deleteRow(id);
 
-  if (deleted) {
+  if (deleted) { // Tæknilega böggur hér...
     return res.redirect('/admin');
   }
 
