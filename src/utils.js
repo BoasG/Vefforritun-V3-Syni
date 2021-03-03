@@ -26,3 +26,13 @@ export async function pagingInfo({
     nextUrl: `${baseUrl}/?page=${page + 1}`,
   };
 }
+
+export function setPagenumber(page) {
+  const num = Number(page);
+
+  if (Number.isNaN(num) || !Number.isInteger(num) || num < 1) {
+    return 1;
+  }
+
+  return num;
+}

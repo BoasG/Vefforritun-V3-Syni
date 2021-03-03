@@ -3,13 +3,15 @@ import { body, validationResult } from 'express-validator';
 import xss from 'xss';
 
 import { list, insert, total } from './db.js';
-import { catchErrors, pagingInfo, PAGE_SIZE } from './utils.js';
+import {
+  catchErrors, pagingInfo, PAGE_SIZE, setPagenumber,
+} from './utils.js';
 
 export const router = express.Router();
 
 async function index(req, res) {
   let { page = 1 } = req.query;
-  page = Number(page);
+  page = setPagenumber(page);
 
   const errors = [];
   const formData = {

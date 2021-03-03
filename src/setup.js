@@ -21,6 +21,7 @@ function createFakeData(n) {
       // eslint-disable-next-line no-continue
       continue;
     }
+    nationalIds.add(nationalId);
 
     const twoWeeksAgo = new Date();
     twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
