@@ -2,7 +2,7 @@
 
 [Verkefnalýsing](https://github.com/vefforritun/vef2-2021-v3).
 
-[Vídeó yfirferð á sýnilausn]().
+[Vídeó yfirferð á sýnilausn](https://youtu.be/hVhlxcxZ-Oc).
 
 Keyrt með:
 
